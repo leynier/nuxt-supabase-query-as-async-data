@@ -59,7 +59,7 @@ export default defineNuxtConfig({
 Once installed, Supabase queries gain the `.asAsyncData()` method automatically:
 
 ```ts
-const { data, pending, error } = await supabase
+const { data, status, error } = await supabase
   .from('users')
   .select('*')
   .eq('id', 1)
@@ -69,7 +69,7 @@ const { data, pending, error } = await supabase
 Equivalent to:
 
 ```ts
-const { data, pending, error } = await useAsyncData(
+const { data, status, error } = await useAsyncData(
   'user-query',
   () => supabase.from('users').select('*').eq('id', 1)
 );
