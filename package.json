@@ -1,0 +1,34 @@
+{
+    "name": "nuxt-supabase-query-as-async-data",
+    "version": "1.0.0",
+    "description": "Nuxt module for using Supabase queries as asyncData",
+    "main": "dist/module.mjs",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "nuxt-module-build",
+        "prepublishOnly": "pnpm run build"
+    },
+    "keywords": [
+        "nuxt",
+        "supabase",
+        "module",
+        "async-data",
+        "postgrest"
+    ],
+    "peerDependencies": {
+        "@supabase/postgrest-js": "^1.0.0",
+        "nuxt": "^3.0.0"
+    },
+    "dependencies": {
+        "@nuxt/kit": "^3.2.0"
+    },
+    "devDependencies": {
+        "@nuxt/module-builder": "latest",
+        "@supabase/postgrest-js": "latest",
+        "@types/node": "latest",
+        "nuxt": "latest",
+        "typescript": "latest"
+    }
+}
