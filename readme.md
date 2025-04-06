@@ -3,7 +3,7 @@
 A Nuxt module that enhances developer experience when using Supabase by enabling fluent queries (e.g., `supabase.from(...).select(...)`) to integrate directly with `useAsyncData()` via a convenient `.asAsyncData()` method—no manual wrapping required.
 
 [![npm version](https://img.shields.io/npm/v/nuxt-supabase-query-as-async-data.svg)](https://www.npmjs.com/package/nuxt-supabase-query-as-async-data)
-[![license](https://img.shields.io/npm/l/nuxt-supabase-query-as-async-data.svg)](https://github.com/leynier/nuxt-supabase-query-as-async-data/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/nuxt-supabase-query-as-async-data.svg)](https://github.com/leynier/nuxt-supabase-query-as-async-data/blob/main/license)
 
 ---
 
