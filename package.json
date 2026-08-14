@@ -7,7 +7,7 @@
         "dist"
     ],
     "scripts": {
-        "build": "nuxt-module-build",
+        "build": "nuxt-module-build build",
         "prepublishOnly": "pnpm run build"
     },
     "keywords": [
@@ -19,16 +19,16 @@
     ],
     "peerDependencies": {
         "@supabase/postgrest-js": "^1.0.0",
-        "nuxt": "^3.0.0"
+        "nuxt": "^3.0.0 || ^4.0.0"
     },
     "dependencies": {
-        "@nuxt/kit": "^3.2.0"
+        "@nuxt/kit": "^4.5.2"
     },
     "devDependencies": {
-        "@nuxt/module-builder": "latest",
-        "@supabase/postgrest-js": "latest",
-        "@types/node": "latest",
-        "nuxt": "latest",
-        "typescript": "latest"
+        "@nuxt/module-builder": "^1.0.3",
+        "@supabase/postgrest-js": "^2.112.2",
+        "@types/node": "^26.2.0",
+        "nuxt": "^4.5.2",
+        "typescript": "^5.9.3"
     }
 }
