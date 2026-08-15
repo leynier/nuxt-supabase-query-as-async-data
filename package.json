@@ -1,13 +1,34 @@
 {
     "name": "nuxt-supabase-query-as-async-data",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Nuxt module for using Supabase queries as asyncData",
+    "license": "MIT",
+    "author": "Leynier Gutiérrez González <leynier41@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leynier/nuxt-supabase-query-as-async-data.git"
+    },
+    "bugs": "https://github.com/leynier/nuxt-supabase-query-as-async-data/issues",
+    "homepage": "https://github.com/leynier/nuxt-supabase-query-as-async-data#readme",
     "main": "dist/module.mjs",
+    "types": "dist/module.d.mts",
+    "exports": {
+        ".": {
+            "types": "./dist/module.d.mts",
+            "import": "./dist/module.mjs"
+        }
+    },
     "files": [
         "dist"
     ],
+    "engines": {
+        "node": ">=18"
+    },
+    "packageManager": "pnpm@11.21.0",
     "scripts": {
+        "dev:prepare": "nuxt-module-build build --stub",
         "build": "nuxt-module-build build",
+        "test": "vitest run",
         "prepublishOnly": "pnpm run build"
     },
     "keywords": [
@@ -18,7 +39,7 @@
         "postgrest"
     ],
     "peerDependencies": {
-        "@supabase/postgrest-js": "^1.0.0",
+        "@supabase/postgrest-js": "^2.0.0",
         "nuxt": "^3.0.0 || ^4.0.0"
     },
     "dependencies": {
@@ -29,6 +50,7 @@
         "@supabase/postgrest-js": "^2.112.2",
         "@types/node": "^26.2.0",
         "nuxt": "^4.5.2",
-        "typescript": "^5.9.3"
+        "typescript": "^5.9.3",
+        "vitest": "^3.2.4"
     }
 }

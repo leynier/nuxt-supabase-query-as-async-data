@@ -7,15 +7,14 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-supabase-query-as-async-data',
     configKey: 'supabaseQueryAsAsyncData',
     compatibility: {
-      nuxt: '^3.0.0 || ^4.0.0',
-      bridge: false
+      nuxt: '^3.0.0 || ^4.0.0'
     }
   },
   defaults: {},
   setup(options, nuxt) {
     const resolver = createResolver(import.meta.url)
 
-    // Add plugin that extends PostgrestBuilder and Function prototypes
+    // Add plugin that extends the PostgrestBuilder prototype
     addPlugin(resolver.resolve('./runtime/plugin'))
 
     // Add types
