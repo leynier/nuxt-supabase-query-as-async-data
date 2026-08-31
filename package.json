@@ -50,7 +50,7 @@
         "@supabase/postgrest-js": "^2.112.2",
         "@types/node": "^26.2.0",
         "nuxt": "^4.5.2",
-        "typescript": "^5.9.3",
+        "typescript": "^7.0.2",
         "vitest": "^4.1.10"
     }
 }
